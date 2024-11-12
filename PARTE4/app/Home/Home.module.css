@@ -1,0 +1,81 @@
+.container {
+    padding: 2rem;
+    background-color: #f0f8ff; /* Azul claro */
+    border: 1px solid #4682b4; /* Azul acero */
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    min-height: 75vh;
+}
+
+.heading {
+    color: #4682b4; /* Azul acero */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.eventList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.eventItem {
+    background-color: #5f9ea0; /* Verde azulado */
+    border: 1px solid #4682b4;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.eventItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.eventItem h1 {
+    color: #f0f8ff; /* Blanco para contraste */
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.eventItem p {
+    color: #f0f8ff; /* Blanco */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.eventButton {
+    background-color: #4682b4; /* Azul acero */
+    color: #f0f8ff; /* Blanco */
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.eventButton:hover {
+    background-color: #1e4f74; /* Azul más oscuro */
+}
+
+.loading,
+.error {
+    color: #4682b4; /* Azul acero */
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: sans-serif;
+}

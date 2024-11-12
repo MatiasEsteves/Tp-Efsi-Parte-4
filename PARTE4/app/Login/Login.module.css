@@ -1,0 +1,141 @@
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #e3f2fd;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 60, 136, 0.2);
+  }
+  
+  .navPills {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 30px;
+    list-style: none;
+    border-bottom: 1px solid #bbdefb;
+  }
+  
+  .navItem {
+    flex: 1;
+  }
+  
+  .navLink {
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+    color: #1565c0;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #0d47a1;
+  }
+  
+  .navLinkActive {
+    color: #0d47a1;
+    border-bottom: 3px solid #0d47a1;
+  }
+  
+  .tabContent {
+    padding: 25px;
+    background-color: #bbdefb;
+    border-radius: 10px;
+    border: 1px solid #90caf9;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    position: relative;
+  }
+  
+  .formLabel {
+    font-weight: bold;
+    color: #1e88e5;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .formControl {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #64b5f6;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #e3f2fd;
+  }
+  
+  .btnPrimary {
+    background-color: #1e88e5;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+  }
+  
+  .socialButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #e3f2fd;
+    border: 2px solid #64b5f6;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 60, 136, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+  }
+  
+  .socialButton:hover {
+    background-color: #bbdefb;
+    box-shadow: 0 6px 12px rgba(0, 60, 136, 0.3);
+  }
+  
+  .socialButton img {
+    width: 26px;
+    height: 26px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .textCenter {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 17px;
+    color: #1e88e5;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1565c0;
+  }
+  
+  .checkboxLabel {
+    font-size: 15px;
+  }
+  
