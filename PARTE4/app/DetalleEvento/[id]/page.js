@@ -21,7 +21,7 @@ export default function DetalleEvento({ params }) {
             currentUser = JSON.parse(userData);
         }
     } catch (error) {
-        console.error("Error al analizar el usuario del localStorage:", error);
+        console.error("Error:", error);
     }
 
     useEffect(() => {
@@ -30,7 +30,7 @@ export default function DetalleEvento({ params }) {
                 .then(response => {
                     const eventData = response.data;
                     if (eventData.isPrivate && (!currentUser || !eventData.allowedUsers.includes(currentUser.username))) {
-                        setError(new Error("No tienes permiso para ver este evento."));
+                        setError(new Error("Error Procesando Pedido"));
                     } else {
                         setDetailEvent(eventData);
                     }
@@ -41,7 +41,7 @@ export default function DetalleEvento({ params }) {
                     setLoading(false);
                 });
         } else {
-            setError(new Error("ID de evento no proporcionado."));
+            setError(new Error("Error Procesando Pedido."));
             setLoading(false);
         }
     }, [id]);

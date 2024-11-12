@@ -23,7 +23,6 @@ export default function LoginForm() {
     setError(null);
   };
 
-  // Validación de los campos del formulario
   const FormValidations = () => {
     if (!username || !password) {
       setError("Todos los campos son requeridos");
@@ -36,14 +35,13 @@ export default function LoginForm() {
     return true;
   };
 
-  // Manejo de registro
   const handleRegister = async (e) => {
     e.preventDefault();
     if (!FormValidations
-()) return; // Validar el formulario antes de enviarlo
+()) return;
 
     try {
-      const response = await axios.post("http://localhost:3000/api/user/register", {
+      const response = await axios.post("http://localhost:3001/api/user/register", {
         first_name,
         last_name,
         username,
@@ -140,7 +138,7 @@ export default function LoginForm() {
                 </div>
                 <div className={styles.formGroup}>
                   <label className={styles.formLabel} htmlFor="loginPassword">
-                    Password
+                    Contraseña
                   </label>
                   <input
                     type="password"
@@ -194,7 +192,7 @@ export default function LoginForm() {
                 </div>
                 <div className={styles.formGroup}>
                   <label className={styles.formLabel} htmlFor="registerPassword">
-                    Password
+                    Contraseña
                   </label>
                   <input
                     type="password"
