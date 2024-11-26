@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './LoginForm.module.css';
 import { UserContext } from '../Components/UserContext/UserContext';
@@ -16,6 +16,13 @@ export default function LoginForm() {
   const [password, setPassword] = useState("");
   const [first_name, setFirst_name] = useState("");
   const [last_name, setLast_name] = useState("");
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      router.push("/Home");
+    }
+  }, [router]);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);

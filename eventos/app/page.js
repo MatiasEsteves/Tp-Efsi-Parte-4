@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Footer from "./Components/Footer";
 import styles from "./page.module.css";
 import { UserContext } from "./Components/UserContext/UserContext";
@@ -10,13 +10,11 @@ export default function App() {
   const router = useRouter();
   const { user } = useContext(UserContext);
 
-  const handleViewEvents = () => {
+  useEffect(() => {
     if (user) {
       router.push("/Home");
-    } else {
-      router.push("/LoginForm");
-    }
-  };
+    } 
+  }, [user, router]); 
 
   return (
     <>
@@ -25,7 +23,7 @@ export default function App() {
           ¡Hola, {user ? ` ${user.username}` : ""}! Bienvenido a tu espacio de
           eventos
         </h1>
-        <button onClick={handleViewEvents} className={styles.viewEventsButton}>
+        <button onClick={()=>router.push("/Home")} className={styles.viewEventsButton}>
           Ver eventos
         </button>
       </main>
