@@ -1,0 +1,78 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(72, 133, 237, 0.25); /* Azul translúcido */
+}
+
+/* Estilo principal del contenedor */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: #e3f2fd;  /* Fondo azul claro */
+}
+
+/* Detalle de evento */
+.detalleEvento {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(70, 130, 180, 0.1);  /* Sombra suave azul */
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Título del detalle */
+.h3 {
+    font-size: 2rem;
+    color: #3e617d;  /* Azul oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo de la lista */
+.ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de cada item de la lista */
+.li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b3cde0;  /* Azul suave para la separación */
+    padding-bottom: 10px;
+    color: #3e617d;  /* Azul oscuro */
+}
+
+/* Estilo para el último item de la lista */
+.li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo del botón de retroceso */
+.btnBack {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #3e617d;  /* Azul oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Efecto hover del botón */
+.btnBack:hover {
+    background-color: #2c4f65;  /* Azul aún más oscuro al pasar el ratón */
+}

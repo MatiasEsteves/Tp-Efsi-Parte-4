@@ -1,0 +1,54 @@
+.restrictedAccess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f0f8ff; /* Azul claro */
+  padding: 20px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.restrictedAccess h2 {
+  font-size: 2rem;
+  color: #4682b4; /* Azul medio */
+  margin-bottom: 10px;
+}
+
+.restrictedAccess p {
+  font-size: 1rem;
+  color: #5f9ea0; /* Azul verdoso */
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.loginButton {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4682b4; /* Azul medio */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover {
+  background-color: #5f9ea0; /* Azul verdoso */
+  transform: scale(1.05);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #4682b4; /* Azul medio */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff; /* Azul claro */
+}

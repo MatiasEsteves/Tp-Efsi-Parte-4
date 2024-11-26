@@ -1,0 +1,143 @@
+.page {
+  --blue-rgb: 72, 133, 237; /* Azul vibrante */
+  --light-blue: rgba(var(--blue-rgb), 0.1);
+  --button-primary-hover: #1e72b5;
+  --button-secondary-hover: #c2e0ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0f7fa; /* Azul muy claro */
+}
+
+.mainContent {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.mainContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(72, 133, 237, 0.25); /* Azul translúcido */
+  z-index: -1;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1e72b5;
+  animation: slideInUp 1.5s ease-out;
+  font-weight: bold;
+}
+
+.viewEventsButton {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1e72b5;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.viewEventsButton:hover {
+  background-color: #005d8d;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #1565c0; /* Azul más profundo */
+  color: white;
+  z-index: 1;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.footer img {
+  flex-shrink: 0;
+  height: 25px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px;
+  }
+
+  .mainContent {
+    height: 60vh;
+  }
+
+  .h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .viewEventsButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

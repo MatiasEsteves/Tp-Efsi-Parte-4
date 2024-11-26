@@ -1,0 +1,142 @@
+.body
+{
+  background: rgba(72, 133, 237, 0.25); /* Azul translúcido */
+ 
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;  /* Fondo azul claro */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(70, 130, 180, 0.1); /* Sombra azul suave */
+}
+
+.navPills {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.navItem {
+  flex: 1;
+}
+
+.errorMessage {
+  color: #e74c3c;  /* Rojo para mensajes de error */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.navLink {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #4682b4;  /* Azul medio para los enlaces */
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.navLinkActive {
+  color: #1e3a5f;  /* Azul más oscuro para el enlace activo */
+  border-bottom: 2px solid #1e3a5f;  /* Subrayado azul oscuro */
+}
+
+.tabContent {
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #3c6e91;  /* Azul medio para las etiquetas */
+}
+
+.formControl {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #5d8baf;  /* Azul grisáceo para los bordes */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f0f8ff;  /* Fondo suave en azul muy claro */
+}
+
+.btnPrimary {
+  background-color: #1e3a5f;  /* Azul oscuro para el botón */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btnPrimary:hover {
+  background-color: #0d2f4b;  /* Azul aún más oscuro al pasar el mouse */
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #f0f8ff;  /* Fondo azul claro */
+  border: 1px solid #a7c0d9;  /* Borde azul más claro */
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(70, 130, 180, 0.1); /* Sombra suave */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+
+.socialButton:hover {
+  background-color: #4682b4;  /* Azul medio en hover */
+  box-shadow: 0 4px 8px rgba(70, 130, 180, 0.2);  /* Sombra más intensa */
+}
+
+.socialButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.textCenter {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #4682b4;  /* Azul medio para las etiquetas de checkbox */
+}

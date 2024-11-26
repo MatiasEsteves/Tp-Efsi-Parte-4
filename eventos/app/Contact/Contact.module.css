@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;  /* Aumenté el padding vertical */
+  background: rgba(72, 133, 237, 0.25); /* Azul translúcido */
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.5rem;  /* Aumenté el tamaño del título */
+  margin-bottom: 30px;  /* Aumenté el espacio inferior */
+  color: #3e5c61;  /* Cambié el color del título a un azul grisáceo */
+  text-align: center;  /* Centré el título */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;  /* Permití que las tarjetas se ajusten en el contenedor */
+  gap: 30px;
+  justify-content: center;  /* Centré las tarjetas */
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;  /* Aumenté el radio del borde para hacerlo más redondeado */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Aumenté la sombra para hacerlo más pronunciado */
+  padding: 25px;  /* Aumenté el padding para mayor espacio interno */
+  width: 320px;  /* Cambié el tamaño de las tarjetas */
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* Añadí transición para el movimiento */
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Aumenté la sombra al pasar el mouse */
+  transform: translateY(-5px);  /* Añadí un pequeño efecto de elevación */
+}
+
+.name {
+  font-size: 1.8rem;  /* Aumenté el tamaño del texto del nombre */
+  color: #3e5c61;  /* Cambié el color a un azul más oscuro */
+  margin-bottom: 10px;
+}
+
+.email, .phone {
+  font-size: 1rem;  /* Cambié el tamaño de fuente */
+  color: #567a80;  /* Cambié el color a un azul intermedio */
+  margin-bottom: 8px;
+}
+
